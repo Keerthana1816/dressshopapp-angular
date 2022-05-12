@@ -1,0 +1,18 @@
+<h3>Admin Login</h3>
+<form ngNativeValidate (submit)="adminlogin()">
+    <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" [(ngModel)]="email" required placeholder="Enter email"/>
+    </div>
+    <br>
+    <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" [(ngModel)]="password" required placeholder="Enter Password"/>
+
+    </div>
+    <br>
+    <div>
+        <button type="submit" class="btn btn-primary">Submit</button> &nbsp;
+        <button type="reset" class="btn btn-danger">Reset</button>
+    </div>
+</form>
